@@ -1,4 +1,4 @@
-module github.com/ilibs/gosql/v2
+module github.com/alexrett/gosql/v2
 
 go 1.10
 
