@@ -2,7 +2,7 @@ package gosql
 
 import (
 	"errors"
-	"log"
+	log "gitlab.com/slothpro/sloth_tds/core/logger"
 	"strings"
 	"time"
 
@@ -60,7 +60,7 @@ func Connect(configs map[string]*Config) (err error) {
 			errs = append(errs, err.Error())
 			continue
 		}
-		log.Println("[db] connect:" + key)
+		// log.Println("[db] connect:" + key)
 
 		if conf.ShowSql {
 			logger.SetLogging(true)
